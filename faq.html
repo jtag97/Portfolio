@@ -50,7 +50,6 @@ body {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  position: absolute;
   bottom: 0px;
   width: 100vw;
 }
@@ -120,12 +119,12 @@ function filterFAQ() {
   var input = document.getElementById('searchInput').value.toLowerCase();
   // Get all FAQ items
   var faqItems = document.querySelectorAll('.faq-item');
-  
+
   // Loop through each FAQ item
   faqItems.forEach(function(item) {
     var question = item.querySelector('h3').innerText.toLowerCase();
     var answer = item.querySelector('p').innerText.toLowerCase();
-    
+
     // Check if input matches the question or answer
     if (question.includes(input) || answer.includes(input)) {
       item.style.display = 'block'; // Show FAQ item
