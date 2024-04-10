@@ -22,14 +22,18 @@
       flex-direction: column;
       align-items: flex-start;
     }
+	a{
+		text-decoration: none; 
+		color: white;
+	}
 
   </style>
 </head>
 <body>
   <header class="header">
-	<div class="container" id="nav" style="padding: 0px;"><img src="whiteOnBlackLogo.png" height="250" width="250"/></div>
-	<div class="container" id="nav"><div class="navOption">Gallary</div><a href="faq.html" style="text-decoration: none; color: white;"><div class="navOption">FAQ</div></a>
-	<div class="navOption">Contact Us</div><div class="navOption" style="margin-left: 40%; width:30vw;">Search <input type="text" style=" width: 150px;"></input> </div></div>
+	<div class="container" id="nav" style="padding: 0px;"><img src="whiteOnBlackLogo.png" onclick="window.location.href='modern.html'" height="50" width="50"/></div>
+	<div class="container" id="nav"><a href="gallery.html"><div class="navOption">Gallary</div></a><a href="faq.html"><div class="navOption">FAQ</div></a>
+	<a href="contact.html"><div class="navOption">Contact Us</div></a><div class="navOption" style="text-align: right;">Search <input type="text" style="width: 150px;"></input> </div></div>
   </header>
   <center>
   <section class="contact-form">

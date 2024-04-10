@@ -4,59 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ Page</title>
-  <style type="text/css">
-  /* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Header Styles */
-.header {
-  background: #f4f4f4;
-  padding: 50px 0;
-  text-align: center;
-}
-
-/* FAQ Styles */
-.faq-section {
-  margin-bottom: 40px;
-}
-
-.faq-item {
-  margin-bottom: 20px;
-}
-
-.faq-item h3 {
-  margin-bottom: 10px;
-}
-
-/* Footer Styles */
-.footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  bottom: 0px;
-  width: 100vw;
-}
-  </style>
+  <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
-
+	<header class="header">
+	<div class="container" id="nav" style="padding: 0px;"><img src="whiteOnBlackLogo.png" height="50" width="50"/></div>
+	<div class="container" id="nav"><div class="navOption" onclick="window.location='gallery.html';">Gallary</div><div class="navOption" onclick="window.location='faq.html';">FAQ</div>
+	<div class="navOption" onclick="window.location='contact.html';">Contact Us</div><div class="navOption" style="margin-left: 40%; width:30vw;">Search <input type="text" style=" width: 150px;"></input> </div></div>
+  </header>
     <header class="header">
     <div class="container">
       <h1>Frequently Asked Questions</h1>
@@ -64,8 +20,8 @@ body {
     </div>
   </header>
 
-  <main class="faq">
-    <div class="container" id="faqContainer">
+  <main class="faq"><center>
+    <div class="container" id="faqContainer" style="width: 50%; text-align: left;">
       <section class="faq-section">
         <h2>General Questions</h2>
         <div class="faq-item">
@@ -77,7 +33,6 @@ body {
           <p>Nullam eu fermentum urna. Sed vehicula ipsum ac nunc mattis, vel sodales enim finibus.</p>
         </div>
       </section>
-
       <section class="faq-section">
         <h2>Product Questions</h2>
         <div class="faq-item">
@@ -103,7 +58,7 @@ body {
 	  <section class="faq-section">
 	  <h3>Further questions? <a href="contact.html">Contact Us</a></h3>
 	  </section>
-    </div>
+    </div></center>
   </main>
 
   <footer class="footer">
