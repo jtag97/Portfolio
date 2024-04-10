@@ -20,6 +20,12 @@ margin: 0px;
 padding: 0px;
 }
 
+#faqContainer{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
 /* Header Styles */
 .header {
 background: #f4f4f4;
@@ -83,7 +89,7 @@ padding-right: 5vw;
 padding-top: 10vh;
 padding-bottom: 10vh;
 }
-
+/*
 .gallery{
 background: #f4f4f4;
 text-align: center;
@@ -96,6 +102,18 @@ padding-bottom: 10vh;
 	display: flex;
 	justify-content: start;
 	flex-direction: row;
+}
+ below is mobile compatible*/
+.gallery {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 10vh 5vw; /* Adjusted padding for mobile layout */
+}
+
+.gallery > .container {
+    display: flex;
+    justify-content: center; /* Centering images horizontally */
+    flex-wrap: wrap; /* Allowing images to wrap on smaller screens */
 }
 .img{
 	height:30%; 
